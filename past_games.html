@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Past Games</title>
+    <style>
+        body {
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        h2.section-title {
+            text-align: center;
+            color: #333;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            margin-bottom: 30px;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #333;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+
+        .best-moments {
+            margin-top: 30px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .best-moment {
+            flex: 1 1 300px;
+            margin: 10px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .best-moment img {
+            width: 100%; /* Set images to 100% width */
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <!-- Best Moments -->
+    <h2 class="section-title"><em>Past Games</em></h2>
+    <button id="resultsTab" class="tab-button active-tab">Results</button>
+    <button id="bestMomentsTab" class="tab-button">Best Moments</button>
+
+    <div id="resultsTable" class="tab-content">
+        
+            <h2 class="section-title"><em>Results</em></h2>
+            <table>
+        <tr>
+            <th>Game</th>
+            <th>Teams</th>
+            <th>Date</th>
+            <th>Result</th>
+        </tr>
+        <tr>
+            <td>Game 1</td>
+            <td>Tigers vs. Lions</td>
+            <td>September 20, 2023</td>
+            <td>3-2 (Tigers)</td>
+        </tr>
+        <tr>
+            <td>Game 2</td>
+            <td>Eagles vs. Falcons</td>
+            <td>September 25, 2023</td>
+            <td>2-0 (Falcons)</td>
+        </tr>
+    </table>
+        
+    </div>
+
+    <div id="bestMoments" class="best-moments tab-content" style="display: none;">
+        <div class="best-moment">
+            <img src="images/best_moments1.jpeg" alt="Best Moment 1">
+            <p><strong>Game 1:</strong> Tigers scored a winning goal in the last minute.</p>
+        </div>
+        <div class="best-moment">
+            <img src="images/best_moments2.jpg" alt="Best Moment 2">
+            <p><strong>Game 2:</strong> Falcons' incredible defensive plays secured their victory.</p>
+        </div>
+    </div>
+
+
+    <footer>
+        <p class="text-center">&copy; 2023 Games Schedule. All rights reserved.</p>
+    </footer>
+
+    <script >
+        const resultsTab = document.getElementById("resultsTab");
+        const bestMomentsTab = document.getElementById("bestMomentsTab");
+        const resultsTable = document.getElementById("resultsTable");
+        const bestMoments = document.getElementById("bestMoments");
+
+        resultsTab.addEventListener("click", function() {
+            resultsTab.classList.add("active-tab");
+            bestMomentsTab.classList.remove("active-tab");
+            resultsTable.style.display = "block";
+            bestMoments.style.display = "none";
+        });
+
+        bestMomentsTab.addEventListener("click", function() {
+            bestMomentsTab.classList.add("active-tab");
+            resultsTab.classList.remove("active-tab");
+            bestMoments.style.display = "block";
+            resultsTable.style.display = "none";
+        });
+    </script>
+    
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> -->
+</body>
+</html>

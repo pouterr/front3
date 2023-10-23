@@ -1,0 +1,136 @@
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+#main-content {
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid #ccc;
+}
+
+#logo {
+    display: block;
+    margin: 0 auto;
+}
+
+
+.section-title {
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+
+#main-content {
+    position: relative;
+    top: 10px;
+}
+
+
+#game-results table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#game-results table th, #game-results table td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+}
+
+#game-results table th {
+    background-color: lightgray;
+}
+
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+header {
+    text-align: center;
+    background-color: #333; 
+    color: white;
+    padding: 20px 0;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+nav ul {
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav a {
+    padding: 10px 20px;
+}
+
+.timer-container {
+    max-width: 300px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.timer {
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

@@ -1,0 +1,227 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Games Schedule</title>
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="images/favicon.ico" alt="Games Schedule Logo" width="30" height="30" class="d-inline-block align-top">
+                    Games Schedule
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#upcoming-games">Upcoming Games</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="past_games.html">Past Games</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        
+        
+        
+        <div class="container">
+            <header>
+                <h1>Games Schedule</h1>
+            </header>
+
+            <div id="main-content">
+                <div class="container">
+                    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/1.png" height="300px" width="100px" class="d-block w-100" alt="Image 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/messi.jpeg" height="300px" width="100px" class="d-block w-100" alt="Image 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/wolf.jpg" height="300px" width="100px" class="d-block w-100" alt="Image 3">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExample" role="button" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExample" role="button" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col mx-auto">
+                        <section id="upcoming-games">
+                            <h2 class="section-title">Upcoming Games</h2>
+                            <ol>
+                                <li>
+                                    <strong>Game 1:</strong> Tigers vs. Lions
+                                    <p>Date: September 20, 2023</p>
+                                    <p>Time: 3:00 PM</p>
+                                </li>
+                                <li>
+                                    <strong>Game 2:</strong> Eagles vs. Falcons
+                                    <p>Date: September 25, 2023</p>
+                                    <p>Time: 2:30 PM</p>
+                                </li>
+                            </ol>
+                        </section>
+                    </div>
+                </div>
+        
+            <h1>Games watchlist</h1>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <input type="text" id="taskInput" placeholder="Game Number">
+                    </div>
+                    <div class="col-md-3">
+                        <button id="addTask" class="btn btn-primary">Add Game</button>
+                    </div>
+                </div>
+                <ul id="taskList" class="list-group mt-3">
+                </ul>
+            </div>  
+
+            <h1>Set time left for next match</h1>
+
+            <div class="timer-container">
+                <div id="timer" class="timer">00:00</div>
+                <input id="durationInput" type="number" placeholder="Enter duration (in seconds)">
+                <button id="startButton">Start</button>
+            </div>
+
+        <!-- Include JavaScript at the bottom of the HTML file -->
+        <script src="script.js"></script>
+
+                <hr>
+
+                <div class="jumbotron">
+                    <h1 class="display-4">Hello, gamers!</h1>
+                    <p class="lead">Get latest games schedule</p>
+                    <hr class="my-4">
+                    <p>Get to the top of site.</p>
+                    <p class="lead">
+                    <a class="btn btn-primary btn-lg" href="#" role="button">Top</a>
+                    </p>
+                </div>              
+                <section id="testimonials">
+                    <h2 class="section-title">Testimonials</h2>
+                    <blockquote>
+                        "The Games Schedule website is amazing! It helps me keep track of all the upcoming games easily."
+                        <cite>- John Doe</cite>
+                    </blockquote>
+                    <blockquote>
+                        "I love the detailed results section. Great way to stay updated with the game outcomes."
+                        <cite>- Jane Smith</cite>
+                    </blockquote>
+                </section>
+
+                <hr>
+
+                <section id="partners">
+                    <h2 class="section-title">PARTNERS</h2>
+                    <div class="d-flex flex-row">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="images/aitu.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">AITU</h5>
+                                <p class="card-text">Astana IT University is the leader of innovative continuous IT education and science with stable academic traditions and high social responsibility</p>
+                                <a href="#" class="btn btn-primary">More Info</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="images/expo.jpeg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">EXPO</h5>
+                                <p class="card-text">We create truly unique industry platforms, bringing people together in communities to exchange ideas, discuss events and build strong relationships.</p>
+                                <a href="#" class="btn btn-primary">More Info</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <div class="container">
+                    <h2 class="mt-4">Feedback for Games Schedule</h2>
+                    <ul class="list-group mt-3">
+                        <li class="list-group-item">Excellent schedule! Very well organized.</li>
+                        <li class="list-group-item">Would be great to have more details about the teams.</li>
+                        <li class="list-group-item">The game timings are perfect for my schedule.</li>
+                        <li class="list-group-item">The date for Game 2 clashes with another event I have.</li>
+                        <li class="list-group-item">Please consider adding a live streaming option for the games.</li>
+                    </ul>
+                </div>
+                
+
+                <hr>
+
+                <section id="about">
+                    <h2 class="section-title">About Us</h2>
+                    <p>We are dedicated to providing you with the latest and most accurate information about upcoming and past games. Stay tuned!</p>
+                </section>
+
+                <section id="highlights">
+                    <h2 class="section-title">Event Highlights</h2>
+                    <ul>
+                        <li>Amazing performances</li>
+                        <li>Interactive fan experiences</li>
+                        <li>Food and beverage stalls</li>
+                    </ul>
+                </section>
+
+                <aside>
+                    <h2>Important Information</h2>
+                    <p>Make sure to arrive early to secure your seats!</p>
+                </aside>
+
+                <footer>
+                    <address>
+                        Contact us at <a href="mailto:games@schedule.com">games@schedule.com</a>
+                    </address>
+                </footer>
+
+                <time datetime="2023-09-10">10th September 2023</time>
+
+                <abbr title="Frequently Asked Questions">FAQs</abbr>
+
+                <mark>Special Offer!</mark>
+            </div>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Games Schedule</li>
+                </ol>
+            </nav>
+            <footer>
+                <p class="text-center">&copy; 2023 Games Schedule. All rights reserved.</p>
+            </footer>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        </div>
+
+        <h2>Wait for New Version</h2>
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+
+        
+    </body>
+    </html>
